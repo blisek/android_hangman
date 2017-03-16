@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.blisek.wisielec.MainActivity">
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/headertextview_default_text"
+        android:layout_alignParentTop="true"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/bottomLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/searchedWordTextView"
+            android:text="-"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/footerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/alphabetLettersLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/hangmanImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomLinearLayout"
+        android:layout_below="@id/headerTextView"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Wisielec</string>
+    <string name="headertextview_default_text">Choosing word. Please wait...</string>
+    <string name="gameLost">Gra przegrana. Wyczerpano liczbe prob.</string>
+    <string name="gameWin">Gra wygrana! Znaleziono słowo.</string>
+    <string name="gameStartMessage">Wybrano słowo. Można rozpocząć grę.</string>
+    <string-array name="words">
+        <item>bike</item>
+        <item>dinosaur</item>
+    </string-array>
+</resources>
